@@ -4,6 +4,10 @@
       "main": "src/opend2_backend/main.mo",
       "type": "motoko"
     },
+    "nft": {
+      "main":"src/nft/nft.mo",
+      "type": "motoko"
+    },
     "opend2_frontend": {
       "dependencies": [
         "opend2_backend"
