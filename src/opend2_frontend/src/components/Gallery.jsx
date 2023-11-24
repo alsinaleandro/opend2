@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Item from "./Item";
+import { Principal } from "@dfinity/principal";
 
 function Gallery(props) {
   
@@ -10,7 +11,7 @@ function Gallery(props) {
     {
       setItems(props.ids.map(
         (NFTid) => (
-          <Item id={NFTid} key={NFTid.toText()}/>
+          <Item id={NFTid} key={NFTid.toText()} role={props.role}/>
       )
       ));
     }
